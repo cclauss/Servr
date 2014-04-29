@@ -21,7 +21,7 @@ elif doAutoStart == "y":
   port = autoStartConfig[3]
 def host(environ, start_response):
   status = "200 OK"
-  headers = [("CContent-type", "text/html")]
+  headers = [("Content-type", "text/html")]
   start_response(status, headers)
   return [str("".join(htmlData))]
 webServer = make_server(address, int(port), host)
