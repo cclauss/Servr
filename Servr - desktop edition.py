@@ -2,7 +2,7 @@ from wsgiref.simple_server import make_server
 import os
 print "Welcome to Servr - desktop edition!"
 ##autoStartConfigFile = open(os.path.join(os.path.expanduser("~"), "/servrAutoStartConfig.txt"), "a+")
-autoStartConfigFile = open("/servrAutoStartConfig.txt", "a+")
+autoStartConfigFile = open("servrAutoStartConfig.txt", "a+")
 autoStartConfig = autoStartConfigFile.read().split("\n")
 doAutoStart = autoStartConfig[0]
 if doAutoStart == "n":
