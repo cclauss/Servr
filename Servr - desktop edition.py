@@ -15,15 +15,14 @@ if doAutoStart == "n":
   dataFile = open("Resources/" + fileName, "r")
   htmlData = dataFile.read().split("\n")
   dataFile.close()
-  resourceFileNaameList = os.listdir("Resources")
+  resourceFileNameList = os.listdir("Resources")
   for fileName in resourceFileNameList:
     dataFile = open("Resources/" + fileName, "r")
     mimeTypes.append(mimetypes.guess_type(fileName))
     data.append(dataFile.read())
-    resourceList = resource.split("/")
+    resourceList = fileName.split("/")
     fileNames.append(resourceList[len(resourceList) - 1])
     dataFile.close()
-    i += 1
   address = raw_input("Enter this device's private IP address:")
   port = raw_input("Enter an unused port:")
 elif doAutoStart == "y":
