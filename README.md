@@ -1,6 +1,7 @@
 Servr - desktop edition PLUS
 =====
 
+**Start by following the instructions at the [Servr homepage](http://gerzer.github.io/Servr).**  
 A simple HTTP server in Python (with a tad of Ruby).  
 1. Download "Servr - desktop edition PLUS.py".  
 2. Make sure Ruby 1.8 or 1.9 is installed. If not, go to [the official Ruby website](https://www.ruby-lang.org/en/).  
