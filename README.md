@@ -1,4 +1,4 @@
-Servr
+Servr - desktop edition
 =====
 
 **Start by following the instructions at the [Servr homepage](http://gerzer.github.io/Servr).**  
