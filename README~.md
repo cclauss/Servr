@@ -1,8 +1,12 @@
 Servr - desktop edition - PRO
 =====
   
+|||||||||||||||||||||||||||  
+|||||                 |||||  
 |||||   ***COMING SOON***   |||||  
-  
+|||||                 |||||  
+|||||||||||||||||||||||||||  
+
 **Start by following the instructions at the [Servr homepage](http://gerzer.github.io/Servr).**  
 A simple HTTP server in Python.  
 1. Download "Servr - desktop edition.py".  
