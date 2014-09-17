@@ -1,4 +1,4 @@
-Servr - desktop edition - PRO
+Servr - desktop edition PRO
 =====
   
 |||||   ***COMING SOON***   |||||  
