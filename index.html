@@ -1,46 +1,57 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
   <head>
-    <meta charset='utf-8'>
+    <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <link href='https://fonts.googleapis.com/css?family=Architects+Daughter' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
-    <link rel="stylesheet" type="text/css" href="stylesheets/pygment_trac.css" media="screen">
-    <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print">
-
-    <!--[if lt IE 9]>
-    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
-
     <title>Servr by Gerzer</title>
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script src="javascripts/main.js"></script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
   </head>
-
   <body>
-    <header>
-      <div class="inner">
-        <h1>Servr</h1>
-        <h2>A simple HTTP server in Python</h2>
-        <a href="https://github.com/Gerzer/Servr" class="button"><small>View project on</small>GitHub</a>
-      </div>
-    </header>
 
-    <div id="content-wrapper">
-      <div class="inner clearfix">
-        <section id="main-content">
-          <h1>
-<a name="goal" class="anchor" href="#goal"><span class="octicon octicon-link"></span></a>Goal</h1>
+      <header>
+        <h1>Servr</h1>
+        <p>A simple HTTP server in Python</p>
+      </header>
+
+      <div id="banner">
+        <span id="logo"></span>
+
+        <a href="https://github.com/Gerzer/Servr" class="button fork"><strong>View On GitHub</strong></a>
+        <div class="downloads">
+          <span>Downloads:</span>
+          <ul>
+            <li><a href="https://github.com/Gerzer/Servr/zipball/master" class="button">ZIP</a></li>
+            <li><a href="https://github.com/Gerzer/Servr/tarball/master" class="button">TAR</a></li>
+          </ul>
+        </div>
+      </div><!-- end banner -->
+
+    <div class="wrapper">
+      <nav>
+        <ul></ul>
+      </nav>
+      <section>
+        <h1>
+<a id="goal" class="anchor" href="#goal" aria-hidden="true"><span class="octicon octicon-link"></span></a>Goal</h1>
 
 <p>We made Servr - desktop edition to address an issue. That issue? There are no simple web servers for the masses. Until now. We wanted to make a web server that any person with minimal technical knowledge could use without writing even one line of code. That is what guided us through the process of creating our Servr products.  </p>
 
 <h1>
-<a name="usage" class="anchor" href="#usage"><span class="octicon octicon-link"></span></a>Usage</h1>
+<a id="usage" class="anchor" href="#usage" aria-hidden="true"><span class="octicon octicon-link"></span></a>Usage</h1>
 
 <h2>
-<a name="servr---desktop-edition" class="anchor" href="#servr---desktop-edition"><span class="octicon octicon-link"></span></a>Servr - desktop edition</h2>
+<a id="servr---desktop-edition" class="anchor" href="#servr---desktop-edition" aria-hidden="true"><span class="octicon octicon-link"></span></a>Servr - desktop edition</h2>
 
 <h3>
-<a name="serving-from-servr---desktop-edition" class="anchor" href="#serving-from-servr---desktop-edition"><span class="octicon octicon-link"></span></a>Serving from Servr - desktop edition</h3>
+<a id="serving-from-servr---desktop-edition" class="anchor" href="#serving-from-servr---desktop-edition" aria-hidden="true"><span class="octicon octicon-link"></span></a>Serving from Servr - desktop edition</h3>
 
 <ol>
 <li>Build a website by hand or using a WYSIWYG (What You See Is What You Get) builder</li>
@@ -51,11 +62,13 @@
 <li>Register your domain with a DNS provider (a great free one is <a href="http://freedns.afraid.org">afraid.org</a>)</li>
 <li>Follow your DNS provider's instructions with name servers (and anything else they tell you to do)<br>
 </li>
-</ol><h2>
-<a name="servr---mobile-edition" class="anchor" href="#servr---mobile-edition"><span class="octicon octicon-link"></span></a>Servr - mobile edition</h2>
+</ol>
+
+<h2>
+<a id="servr---mobile-edition" class="anchor" href="#servr---mobile-edition" aria-hidden="true"><span class="octicon octicon-link"></span></a>Servr - mobile edition</h2>
 
 <h3>
-<a name="description" class="anchor" href="#description"><span class="octicon octicon-link"></span></a>Description</h3>
+<a id="description" class="anchor" href="#description" aria-hidden="true"><span class="octicon octicon-link"></span></a>Description</h3>
 
 <p>Servr - mobile edition is the simplest way to run a multipurpose web server from your iPhone or iPod touch. Serve up HTML content right from iOS device. Servr - mobile edition features a simple HTML editor in the uppermost bordered box (mainly meant for you to paste in HTML code from somewhere else), port selection via a text box or a slider (it's your choice), and a live HTML preview using WebKit in the bottom bordered box.</p>
 
@@ -68,7 +81,7 @@
 <p>Note: Servr - mobile edition works best on devices with a 4-inch Retina display.  </p>
 
 <h3>
-<a name="finding-your-devices-private-ip-address" class="anchor" href="#finding-your-devices-private-ip-address"><span class="octicon octicon-link"></span></a>Finding your device's private IP address</h3>
+<a id="finding-your-devices-private-ip-address" class="anchor" href="#finding-your-devices-private-ip-address" aria-hidden="true"><span class="octicon octicon-link"></span></a>Finding your device's private IP address</h3>
 
 <ol>
 <li>Go to the default iOS home screen</li>
@@ -77,29 +90,20 @@
 <li>Tap the (i) symbol next to the name of the Wi-Fi network your device is currently connected to</li>
 <li>Your device's private IP address is the text next to <code>IP Address</code>
 </li>
-</ol><h1>
-<a name="links" class="anchor" href="#links"><span class="octicon octicon-link"></span></a>Links</h1>
+</ol>
 
-<p><a href="http://gerzer.net">Main website</a></p>
-        </section>
+<h1>
+<a id="links" class="anchor" href="#links" aria-hidden="true"><span class="octicon octicon-link"></span></a>Links</h1>
 
-        <aside id="sidebar">
-          <a href="https://github.com/Gerzer/Servr/zipball/master" class="button">
-            <small>Download</small>
-            .zip file
-          </a>
-          <a href="https://github.com/Gerzer/Servr/tarball/master" class="button">
-            <small>Download</small>
-            .tar.gz file
-          </a>
-
-          <p class="repo-owner"><a href="https://github.com/Gerzer/Servr"></a> is maintained by <a href="https://github.com/Gerzer">Gerzer</a>.</p>
-
-          <p>This page was generated by <a href="https://pages.github.com">GitHub Pages</a> using the Architect theme by <a href="https://twitter.com/jasonlong">Jason Long</a>.</p>
-        </aside>
-      </div>
+<p><a href="http://gerzer.net">Main website</a><br>
+<a href="/Licenses.txt">Copyright information</a></p>
+      </section>
+      <footer>
+        <p>Project maintained by <a href="https://github.com/Gerzer">Gerzer</a></p>
+        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://twitter.com/michigangraham">mattgraham</a></small></p>
+      </footer>
     </div>
-
-  
+    <!--[if !IE]><script>fixScale(document);</script><![endif]-->
+    
   </body>
 </html>
