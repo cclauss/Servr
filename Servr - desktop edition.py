@@ -7,13 +7,13 @@ with open("Config.txt", "a+") as autoStartConfigFile:
 with open("Config.txt", "r") as autoStartConfigFile:
   autoStartConfig = autoStartConfigFile.read().split("\n")
 doAutoStart = autoStartConfig[0].lower()
-if doAutoStart == "n":
+if doAutoStart == "y":
+  print "Getting data from Config.txt..."
+  fileName, address, port = autoStartConfig[1:3]
+else:
   fileName = raw_input("Enter homepage HTML file name including extension:").strip()
   address = raw_input("Enter this device's private IP address:").strip()
   port = raw_input("Enter an unused port:").strip()
-elif doAutoStart == "y":
-  print "Getting data from Config.txt..."
-  fileName, address, port = autoStartConfig[1:3]
 with open("Resources/" + fileName, "r") as dataFile:
   htmlData = dataFile.read().split("\n")
 
