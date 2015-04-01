@@ -11,7 +11,7 @@ data = []
 mimeTypes = []
 fileNames = []
 if doAutoStart == "n":
-  fileName = raw_input("Enter homepage HTML file name including extension:")
+  fileName = raw_input("Enter homepage HTML file name including extension:").strip()
   dataFile = open("Resources/" + fileName, "r")
   htmlData = dataFile.read().split("\n")
   dataFile.close()
@@ -23,8 +23,8 @@ if doAutoStart == "n":
     resourceList = fileName.split("/")
     fileNames.append(resourceList[len(resourceList) - 1])
     dataFile.close()
-  address = raw_input("Enter this device's private IP address:")
-  port = raw_input("Enter an unused port:")
+  address = raw_input("Enter this device's private IP address:").strip()
+  port = raw_input("Enter an unused port:").strip()
 elif doAutoStart == "y":
   print "Getting data from Config.txt..."
   fileName = autoStartConfig[1]
@@ -42,8 +42,8 @@ elif doAutoStart == "y":
   port = autoStartConfig[3]
 def host(environ, start_response):
   i = 0
-  if environ["PATH_INFO"] == None or environ["PATH_INFO"] == "/home" or environ["PATH_INFO"] == "/index.html" or environ["PATH_INFO"] == "/":
-    dataToReturn = str("".join(htmlData))
+  if environ["PATH_INFO"] in (None, "/", "/home", "/index.html"):
+    dataToReturn = "".join(htmlData)
     mimeType = "text/html"
   else:
     for resource in data:
