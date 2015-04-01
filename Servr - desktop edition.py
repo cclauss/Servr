@@ -32,22 +32,18 @@ def fileNames_mimeTypes_and_data(directory="Resources"):
 fileNames, mimeTypes, data = fileNames_mimeTypes_and_data()
 
 def host(environ, start_response):
-  i = 0
   if environ["PATH_INFO"] in (None, "/", "/home", "/index.html"):
     dataToReturn = "".join(htmlData)
     mimeType = "text/html"
   else:
-    for resource in data:
-      if environ["PATH_INFO"] == "/" + str(fileNames[i]):
-        mimeType = str(mimeTypes[i][0])
-        dataToReturn = resource
-      i += 1
+    for i, fileName in enumerate(fileNames):
+      if environ["PATH_INFO"] == "/" + fileName:
+        mimeType = mimeTypes[i][0]
+        dataToReturn = data[i]
   status = "200 OK"
   headers = [("Content-type", mimeType)]
   start_response(status, headers)
   return [dataToReturn]
 webServer = make_server(address, int(port), host)
-i = 0
-servers = []
 print "Serving at address " + str(address) + ":" + port
 webServer.serve_forever()
